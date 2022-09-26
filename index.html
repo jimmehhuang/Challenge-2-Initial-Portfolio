@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Jimmy Huang Portfolio</title>
     </head>
@@ -22,19 +23,20 @@
                 <h3>Some Cool Subtitle</h2>
             </div>
         </section>
-        <article>
+        <article id="main">
             <h2 id= "about-me">About Me</h2>
-        </article>
-        <aside>            
-            <p>
-                I started the first leg of my coding journey in high school with Java competitions. 
-                <br> While fun, this only counted for learning some general computing logic. 
-                <br> The real meat of my knowledge comes from the coding bootcamp I started in September 2022.
-            </p>
-        </aside>
-        <section>
             <h2 id= "work">Work</h2>
-                <div class="works">
+        </article>
+        <aside id="sidebar">            
+            <section>
+                <p>
+                    I started the first leg of my coding journey in high school with Java competitions. 
+                    <br> While fun, this only counted for learning some general computing logic. 
+                    <br> The real meat of my knowledge comes from the coding bootcamp I started in September 2022.
+                </p>
+            </section>
+            <section class="works">
+                <div>
                     <div>
                         <header>Semantic HTML</header>
                         <img src="./assets/images/semantichtmlchallenge.png" alt="Placeholder image"/>
@@ -46,8 +48,9 @@
                         <p>HTML/CSS</p>
                     </div>
                 </div>
-        </section>
-        <footer>
+            </section>
+        </aside>
+        <footer id="main">
             <h2 id= "contact">Contact</h2>
                 <ul>
                     <li><a href="jimmymhuang@gmail.com">Email</a></li>

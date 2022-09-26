@@ -61,6 +61,20 @@ aside {
     color: var(--whitetext);
     border-left: 5px white;
 }
+#main{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
 body {
     color: var(--whitetext);
 }
@@ -80,7 +94,7 @@ body {
 }
 .works img{
     width: 100%;
-    float: left;
+    float: right;
 }
 .works :hover {
     background-color: yellowgreen;
