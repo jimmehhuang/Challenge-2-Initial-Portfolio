@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(48, 45, 45);
+    background-color: rgb(30, 30, 30);
 }
 :root {
     --calmred: rgb(200, 11, 11);
@@ -12,13 +12,13 @@
 body {
     color: var(--whitetext);
 }
-
+/*Header lines at the top*/
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-  
+  /* Title sections on the left should take up 25% of the page */
 #myName,
 #aboutmeTitle,
 #worksTitle,
@@ -26,11 +26,12 @@ header {
     float: left;
     width: 25%;
     padding: 10px;
-    border-right: 1px solid white;
+    border-right: 3px solid white;
     border-top: 0px;
     border-bottom: 0px;
     box-sizing: border-box;
 }
+/*Navigation to page sections and contacts links to external */
 nav,
 #contactLinks {
     display: flex;
@@ -40,22 +41,32 @@ nav,
     width: 75%;
     max-width: 75%;
     box-sizing: border-box;
-    border-left: 1px solid white;
+    border-left: 3px solid white;
 }
+/* Format for links */
 li {
     display: inline;
     list-style-type: none;
     font-size: 24px;
     padding: 5px 10px;
 }
-li:hover{
-    color: red;
-}
+
 a {
     color: var(--whitetext);
     text-decoration: none;
+    background: transparent;
 }
-
+h2 {
+    background: transparent;
+}
+h3{
+    background: transparent;
+    float: right;
+    vertical-align: bottom;
+}
+p{
+    background: transparent;
+}
 #fireBackground {
     background-color: transparent;
     background-image: url("../images/sparkbackground.jpg");
@@ -64,12 +75,8 @@ a {
     background-size: cover;
     width: 100%;
     height: 150px;
+    margin-top: 10px;
     margin-bottom: 10px;
-}
-#sparkText{
-    background-color: transparent;
-    text-align: right;
-    text-justify: bottom;
 }
 
 #aboutmeText {
@@ -80,50 +87,40 @@ a {
     border-top: 0px;
     border-bottom: 0px;
     max-width: 75%;
-    border-left: 1px solid white;
+    border-left: 3px solid white;
 }
 article{
     display: flex;
     flex-direction: row;
 }
 
+/*Section for all project cards*/
 #worksContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 75%;
-    border-left: 1px solid white;
+    border-left: 3px solid white;
 }
+/*First project card is larger than the other cards */
 #firstCard{
-    background-color: brown;
     background-image: url("../images/semantichtmlchallenge.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     min-height: 200px;
     max-height: 500px;
     box-shadow: 5px 5px 5px black;
     margin: 25px;
 }
-#firstCard img{
-    align-content: center;
-    max-width: 100%;
-    max-height: 100%;
-} 
-#firstCard a, h2, p{
-    width: 100%;
-    justify-items: center;
-    vertical-align: bottom;
-    background-color: transparent;
-}
+
 /* Cards formatted for ease of adding future projects */
 .cards {
     display: flex;
     flex-direction: column;
-    background-color: brown;
     box-sizing: border-box;
     padding: 10px;
     width: 400px;
@@ -133,36 +130,28 @@ article{
     box-shadow: 5px 5px 5px black;
 }
 
-.cards a, h2{
-    width: fit-content;
-    text-align: left;
-    text-justify: bottom;
-    background: transparent;
-}
-.cards img{
-    width: 100%;
-    float:none;
-}
-#firstCard :hover{
+/* Text turns black when mouse hovers over */
+#firstCard :hover,
+.cards :hover{
     color: black;
 }
-.cards :hover {
-    color: black;
-} 
+
+/*Title links to top of page since this is the current project*/
 #card1{
-    background-color: brown;
     background-image: url("../images/samplecode.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*Title does not have external link*/
 #card2{
-    background-color: brown;
     background-image: url("../images/flamesbackground.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Footer formatting */
 footer{
     display: flex;
     justify-content: flex-end;
@@ -170,13 +159,14 @@ footer{
     align-items: flex-end;
 }
 
-/* Cards should adjust position and size with screen size */
+/* Cards should flex position and size with screen size,
+ project cards below the first will stack*/
 @media screen and (max-width: 992px) {
     .cards {
       width: 50%;
       flex-direction: column;
     }
-  }
+}
   @media screen and (max-width: 768px) {
     .cards {
       width: 100%;
