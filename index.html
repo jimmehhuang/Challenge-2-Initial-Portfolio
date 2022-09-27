@@ -8,56 +8,64 @@
     </head>
 
     <body>
-        <header>
-            <h1>Jimmy Huang</h1>
+        <header id="pageTop">
+            <section id="myName">
+                <h1>Jimmy Huang</h1>
+            </section>
             <nav>
                 <ul>
                     <li><a href= "#about-me">About Me</a></li>
-                    <li><a href= "#work">Work</a></li>
+                    <li><a href= "#works">Works</a></li>
                     <li><a href= "#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="firebackground">
-            <div>
-                <h3>Some Cool Subtitle</h2>
-            </div>
-        </section>
-        <article id="main">
-            <h2 id= "about-me">About Me</h2>
-            <h2 id= "work">Work</h2>
-        </article>
-        <aside id="sidebar">            
-            <section>
-                <p>
-                    I started the first leg of my coding journey in high school with Java competitions. 
-                    <br> While fun, this only counted for learning some general computing logic. 
-                    <br> The real meat of my knowledge comes from the coding bootcamp I started in September 2022.
-                </p>
-            </section>
-            <section class="works">
-                <div>
-                    <div>
-                        <header>Semantic HTML</header>
-                        <img src="./assets/images/semantichtmlchallenge.png" alt="Placeholder image"/>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div>
-                        <h4>First Portfolio draft</h4>
-                        <img src="./assets/images/samplecode.png" alt="Placeholder image"/>
-                        <p>HTML/CSS</p>
-                    </div>
+        <section>
+            <section id="fireBackground">
+                <div id="sparkText">
+                    <p>Fun Fact: Sparks are my favorite visual effects!</p>
                 </div>
             </section>
-        </aside>
-        <footer id="main">
-            <h2 id= "contact">Contact</h2>
+        </section>
+        <section id="aboutmeTitle">
+            <h2 id= "about-me">About Me</h2>
+        </section>
+        <section id="aboutmeText">
+            <p>
+                I started the first leg of my coding journey in high school with Java competitions. 
+                <br> While fun, this only counted for learning some general computing logic. 
+                <br> The real meat of my knowledge comes from the coding bootcamp I started in September 2022.
+            </p>
+        </section>
+        <article>
+            <section id="worksTitle">
+                <h2 id= "works">Works</h2>
+            </section>
+            <section id="worksContainer">         
+                <div id="firstCard">
+                    <h2><a href="https://jimmehhuang.github.io/Challenge-1/">Semantic HTML</a></h2>
+                    <p>HTML/CSS</p>
+                </div>
+                <div id="card1" class="cards">
+                    <h2><a href="#pageTop">First Portfolio Draft</a></h2>
+                    <p>HTML/CSS</p>
+                </div>
+                <div id="card2" class="cards">
+                    <h2>To Be Continued..</h2>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <section id="contactTitle">
+                <h2 id= "contact">Contact</h2>
+            </section>
+            <section id="contactLinks">    
                 <ul>
                     <li><a href="jimmymhuang@gmail.com">Email</a></li>
                     <li><a href="https://github.com/jimmehhuang">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/jimmy-huang-04468797/">LinkedIn</a></li>
                 </ul>
-
+            </section>
         </footer>
     </body>
 
