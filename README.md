@@ -8,6 +8,9 @@ This initial draft of an online portfolio webpage was created from scratch in VS
 
 The following is a screenshot of the initial draft portfolio webpage. The Navigation links at the top of the page will direct you to the similarly named sections of the webpage. The contact links at the bottom of the page will direct you to the mentioned external links.
 
+![Top of page](/assets/images/Screenshotpagetop.png)
+![Bottom of page](/assets/images/Screenshotpagebottom.png)
+
 The image cards are images of previous projects in my portfolio. Clicking on the title names of each card will direct you to external links in the appropriate repositories. Clicking the card labeled "First Portfolio Draft" will redirect you to the top of the page. There is a space for future projects that does not link anywhere but responds to mouse hovers.
 
 Lastly, the webpage is coded in CSS for responsive media queries so as to change 
